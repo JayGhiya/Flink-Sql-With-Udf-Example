@@ -1,0 +1,244 @@
+{
+    "type": "record",
+    "name": "ObservationTest",
+    "namespace": "com.flink.schema",
+    "fields": [{
+        "name": "code",
+        "type": ["null", {
+            "type": "record",
+            "name": "Code",
+            "fields": [{
+                "name": "coding",
+                "type": ["null", {
+                    "type": "array",
+                    "items": ["null", {
+                        "type": "record",
+                        "name": "Coding",
+                        "fields": [{
+                            "name": "code",
+                            "type": ["null", "string"],
+                            "default": null
+                        }, {
+                            "name": "display",
+                            "type": ["null", "string"],
+                            "default": null
+                        }, {
+                            "name": "system",
+                            "type": ["null", "string"],
+                            "default": null
+                        }]
+                    }]
+                }],
+                "default": null
+            }]
+        }],
+        "default": null
+    }, {
+        "name": "effectivePeriod",
+        "type": ["null", {
+            "type": "record",
+            "name": "EffectivePeriod",
+            "fields": [{
+                "name": "end",
+                "type": ["null", "string"],
+                "default": null
+            }, {
+                "name": "start",
+                "type": ["null", "string"],
+                "default": null
+            }]
+        }],
+        "default": null
+    }, {
+        "name": "id",
+        "type": ["null", "string"],
+        "default": null
+    }, {
+        "name": "identifier",
+        "type": ["null", {
+            "type": "array",
+            "items": ["null", {
+                "type": "record",
+                "name": "Identifier",
+                "fields": [{
+                    "name": "system",
+                    "type": ["null", "string"],
+                    "default": null
+                }, {
+                    "name": "use",
+                    "type": ["null", "string"],
+                    "default": null
+                }, {
+                    "name": "value",
+                    "type": ["null", "string"],
+                    "default": null
+                }]
+            }]
+        }],
+        "default": null
+    }, {
+        "name": "interpretation",
+        "type": ["null", {
+            "type": "array",
+            "items": ["null", {
+                "type": "record",
+                "name": "Interpretation",
+                "fields": [{
+                    "name": "coding",
+                    "type": ["null", {
+                        "type": "array",
+                        "items": ["null", "Coding"]
+                    }],
+                    "default": null
+                }]
+            }]
+        }],
+        "default": null
+    }, {
+        "name": "issued",
+        "type": ["null", "string"],
+        "default": null
+    }, {
+        "name": "performer",
+        "type": ["null", {
+            "type": "array",
+            "items": ["null", {
+                "type": "record",
+                "name": "Performer",
+                "fields": [{
+                    "name": "display",
+                    "type": ["null", "string"],
+                    "default": null
+                }, {
+                    "name": "reference",
+                    "type": ["null", "string"],
+                    "default": null
+                }]
+            }]
+        }],
+        "default": null
+    }, {
+        "name": "referenceRange",
+        "type": ["null", {
+            "type": "array",
+            "items": ["null", {
+                "type": "record",
+                "name": "ReferenceRange",
+                "fields": [{
+                    "name": "high",
+                    "type": ["null", {
+                        "type": "record",
+                        "name": "High",
+                        "fields": [{
+                            "name": "code",
+                            "type": ["null", "string"],
+                            "default": null
+                        }, {
+                            "name": "system",
+                            "type": ["null", "string"],
+                            "default": null
+                        }, {
+                            "name": "unit",
+                            "type": ["null", "string"],
+                            "default": null
+                        }, {
+                            "name": "value",
+                            "type": ["null", "int"],
+                            "default": null
+                        }]
+                    }],
+                    "default": null
+                }, {
+                    "name": "low",
+                    "type": ["null", {
+                        "type": "record",
+                        "name": "Low",
+                        "fields": [{
+                            "name": "code",
+                            "type": ["null", "string"],
+                            "default": null
+                        }, {
+                            "name": "system",
+                            "type": ["null", "string"],
+                            "default": null
+                        }, {
+                            "name": "unit",
+                            "type": ["null", "string"],
+                            "default": null
+                        }, {
+                            "name": "value",
+                            "type": ["null", "double"],
+                            "default": null
+                        }]
+                    }],
+                    "default": null
+                }]
+            }]
+        }],
+        "default": null
+    }, {
+        "name": "resourceType",
+        "type": ["null", "string"],
+        "default": null
+    }, {
+        "name": "status",
+        "type": ["null", "string"],
+        "default": null
+    }, {
+        "name": "subject",
+        "type": ["null", {
+            "type": "record",
+            "name": "Subject",
+            "fields": [{
+                "name": "display",
+                "type": ["null", "string"],
+                "default": null
+            }, {
+                "name": "reference",
+                "type": ["null", "string"],
+                "default": null
+            }]
+        }],
+        "default": null
+    }, {
+        "name": "text",
+        "type": ["null", {
+            "type": "record",
+            "name": "Text",
+            "fields": [{
+                "name": "div",
+                "type": ["null", "string"],
+                "default": null
+            }, {
+                "name": "status",
+                "type": ["null", "string"],
+                "default": null
+            }]
+        }],
+        "default": null
+    }, {
+        "name": "valueQuantity",
+        "type": ["null", {
+            "type": "record",
+            "name": "ValueQuantity",
+            "fields": [{
+                "name": "code",
+                "type": ["null", "string"],
+                "default": null
+            }, {
+                "name": "system",
+                "type": ["null", "string"],
+                "default": null
+            }, {
+                "name": "unit",
+                "type": ["null", "string"],
+                "default": null
+            }, {
+                "name": "value",
+                "type": ["null", "double"],
+                "default": null
+            }]
+        }],
+        "default": null
+    }]
+}
